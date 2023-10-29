@@ -5,4 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root
+{
+    --primary: #3061e1FF;
+    --accent: #8ea1e1ff;
+    --black: #23262bFF;
+    --white: #f6f7f7;
+}
 /* endregion common*/
