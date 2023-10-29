@@ -14,3 +14,42 @@
     --white: #f6f7f7;
 }
 /* endregion common*/
+
+/* region utility*/
+.container
+{
+    width: 80%;
+    max-width: 1152px; /*non crescerà più di questa dimensione*/
+    margin: auto;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+[class^"col-"]
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.d-flex
+{
+    display: flex;
+    width: 880%;
+    max-width: 1152px;
+    margin: auto;
+}
+
+.col-2
+{
+    width: calc((100%/12)*2);
+}
+/* endregion utility */
+
+/* region header */
+
+/* endregion header */
