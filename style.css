@@ -51,6 +51,16 @@ body
     width: calc((100%/12)*2);
 }
 
+.col-5
+{
+    width: calc((100%/12)*5);
+}
+
+.col-7
+{
+    width: calc((100%/12)*7);
+}
+
 .btn /*stilizziamo i button, successivamente faremo un'altra classe per stilizzare i bottoni particolari*/
 {
     text-decoration: none;
