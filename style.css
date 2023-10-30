@@ -88,4 +88,33 @@
     gap: 0.5rem;
     justify-content: center;
 }
+
+.singin
+{
+    text-align: end;
+}
 /* endregion header */
+
+/*debug 
+.debug .jumbotron{
+    background-color: blue;
+    height: 350px;
+}
+
+.debug .jumbotron .container
+{
+    background-color: palevioletred;
+    height: 200px;
+}
+*/
+
+/* region main */
+.jumbotron
+{
+    background-color: var(--primary);
+    background-image: url(./img/jumbo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* endregion main */
