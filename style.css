@@ -11,6 +11,7 @@
     --primary: #3061e1FF;
     --accent: #8ea1e1ff;
     --black: #23262bFF;
+    --light: #fefffe;
     --white: #f6f7f7;
 }
 /* endregion common*/
@@ -18,7 +19,7 @@
 /* region utility*/
 .container
 {
-    width: 80%;
+    width: 80%;        /* non occupa tutto lo schermo*/
     max-width: 1152px; /*non crescerà più di questa dimensione*/
     margin: auto;
 }
@@ -30,7 +31,7 @@
     margin: 0 -1rem;
 }
 
-[class^"col-"]
+[class^="col-"]
 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -39,17 +40,52 @@
 .d-flex
 {
     display: flex;
-    width: 880%;
-    max-width: 1152px;
-    margin: auto;
 }
 
 .col-2
 {
     width: calc((100%/12)*2);
 }
+
+.btn /*stilizziamo i button, successivamente faremo un'altra classe per stilizzare i bottoni particolari*/
+{
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 14px;
+}
+
+.btn-light
+{
+    background-color: var(--light);
+    color: var(--black);
+}
 /* endregion utility */
 
 /* region header */
 
+#site_header
+{
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 0.5rem 0; /* top&bottom right&left*/
+}
+
+#site_header nav .logo, #site_header nav .singin
+{
+    flex-grow: 1;
+}
+
+#site_header nav .menu
+{
+    flex-grow: 2;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
 /* endregion header */
