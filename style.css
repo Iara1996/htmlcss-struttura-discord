@@ -19,20 +19,6 @@ body
     --white: #ffffff;
 }
 
-p
-{
-    line-height: 1.5rem;
-}
-
-section
-{
-    padding: 3.5rem 0;
-}
-section.h3
-{
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
 /* #endregion common*/
 
 /* #region utility */
@@ -69,6 +55,11 @@ section.h3
 .col-4
 {
     width: calc((100%/12)*4);
+}
+
+.col-6
+{
+    width: calc((100%/12)*6);
 }
 
 .col-8
@@ -109,6 +100,21 @@ section.h3
     color: var(--white);
 }
 
+p
+{
+    line-height: 1.5rem;
+}
+
+section
+{
+    padding: 3.5rem 0;
+}
+section.h3
+{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
 /* #endregion utility */
 
 /* #region header */
@@ -143,18 +149,23 @@ section.h3
 }
 /* #endregion header*/
 
-/*debug 
-.debug .jumbotron{
-    background-color: blue;
-    height: 350px;
+/* #region debug */
+.debug .container
+{
+    background-color: rgb(232, 192, 61);
+    height: 400px;
+}
+.debug [class^="col-"]
+{
+    background-color: rgb(196, 36, 196);
 }
 
-.debug .jumbotron .container
+.debug footer [class^="col-"]
 {
-    background-color: palevioletred;
-    height: 200px;
+    height: 300px;
 }
-*/
+/* #endregion debug */
+
 
 /* #region main */
 #site_main
@@ -209,5 +220,18 @@ section.tech
     text-align: center;
 }
 
-
 /* #endregion main */
+
+/* #region footer */
+.line
+{
+    color: var(--accent);
+    background-color: var(--accent);
+    border: 1px solid;
+}
+
+.enroll
+{
+    text-align: end;
+}
+/* #endregion footer */
