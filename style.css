@@ -228,7 +228,14 @@ section.tech
     color: var(--accent);
     background-color: var(--accent);
     border: 1px solid;
+    margin: 0 -1rem;
 }
+
+footer [class^='col-']
+{
+    padding: 2rem 0;
+}
+
 
 .enroll
 {
