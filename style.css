@@ -15,8 +15,23 @@ body
     --primary: #3061e1FF;
     --accent: #8ea1e1ff;
     --black: #23262bFF;
-    --light: #fefffe;
-    --white: #f6f7f7;
+    --light: #dadada;
+    --white: #ffffff;
+}
+
+p
+{
+    line-height: 1.5rem;
+}
+
+section
+{
+    padding: 3.5rem 0;
+}
+section.h3
+{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 /* #endregion common*/
 
@@ -51,14 +66,14 @@ body
     width: calc((100%/12)*2);
 }
 
-.col-5
+.col-4
 {
-    width: calc((100%/12)*5);
+    width: calc((100%/12)*4);
 }
 
-.col-7
+.col-8
 {
-    width: calc((100%/12)*7);
+    width: calc((100%/12)*8);
 }
 
 .btn /*stilizziamo i button, successivamente faremo un'altra classe per stilizzare i bottoni particolari*/
@@ -88,6 +103,12 @@ body
     background-color: var(--black);
     color: var(--white);
 }
+.btn-accent
+{
+    background-color: var(--accent);
+    color: var(--white);
+}
+
 /* #endregion utility */
 
 /* #region header */
@@ -95,7 +116,7 @@ body
 #site_header
 {
     color: var(--white);
-    /* background-color: var(--primary);    togliamo lo sfondo perchè usiamo position fixed + width 100%*/
+    background-color: var(--primary);  /*position fixed + width 100%*/
     padding: 0.5rem 0; /* top&bottom right&left*/
     position: fixed;
     width: 100%;
@@ -136,6 +157,11 @@ body
 */
 
 /* #region main */
+#site_main
+{
+    padding-top: 10px;
+}
+
 .jumbotron
 {
     background-color: var(--primary);
@@ -159,8 +185,29 @@ body
 
 .jumbotron p
 {
-    line-height: 1.5rem;
     margin-bottom: 1.5rem;
 }
+
+section.talk
+{
+    background-color: var(--white);
+}
+
+section.meet
+{
+    background-color: var(--light);
+}
+
+section.fandom
+{
+    background-color: var(--white);
+}
+
+section.tech
+{
+    background-color: var(--light);
+    text-align: center;
+}
+
 
 /* #endregion main */
